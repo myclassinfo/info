@@ -1,7 +1,6 @@
 const staticAssets = [
 	'./',
 	'./index.html',
-	'./login.html',
 	'./logo.png',
 	'https://fonts.googleapis.com/icon?family=Material+Icons',
 	'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css',
