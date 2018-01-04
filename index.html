@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="manifest" href="manifest.json">
       <title>My Class | Home </title>
     </head>
 
@@ -72,16 +73,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <script>
-	    	$(window).on('load', function(){
 	    	if('serviceWorker' in navigator){ 
-			 	try{
-			 		navigator.serviceWorker.register('sw.js');
-			 		console.log('SW registered');
-			 	}catch(error){
-			 		console.log('SW failed');
-			 	}
-			 }
-			});
+			try{
+				navigator.serviceWorker.register('sw.js');
+				console.log('SW registered');
+			}catch(error){
+				console.log('SW failed');
+			}
+		 }
 	    </script>
   </body>
 </html>
